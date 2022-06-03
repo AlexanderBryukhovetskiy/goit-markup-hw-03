@@ -40,7 +40,7 @@ body {
     margin-right: auto;
 
 
-    outline: 2px solid tomato;
+    /*outline: 2px solid tomato;*/
 }
 
 
@@ -97,7 +97,7 @@ header {
     align-items: center;
 
 
-    outline: 2px solid tomato;
+    /*outline: 2px solid tomato;*/
 }
 
 .nav-link, .contact-link {
@@ -344,7 +344,7 @@ header {
     background-color: var(--main-dark);
 
     
-    outline: 2px solid tomato;
+    /*outline: 2px solid tomato;*/
 }
 
 #contacts {
