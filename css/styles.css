@@ -14,6 +14,9 @@
     --accent-color: #2196F3; /*кольор логотипу та головних кнопок*/
     --header-logo-font-color: #000; /*колір у логотипі хедера*/
     --footer-contacts-font: rgba(255, 255, 255, 0.6);
+
+        /*кольори рамок елементів*/
+    --portfolio-item-border-color: #EEEEEE;
 }
 
 
@@ -331,14 +334,13 @@ header {
 }
 
 
-/*оформлення  footer*/
+/*оформлення footer*/
 
 .footer-section {
     padding-top: 60px;
     padding-bottom: 60px;
 
     background-color: var(--main-dark);
-    
 }
 
 #contacts {
@@ -347,16 +349,7 @@ header {
     padding: 0;
 
     font-style: normal;
-    
 }
-
-/*.contact-list {
-    display:flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-*/
-
 
 .list .contact-item + .contact-item {
     margin-top: 9px;
@@ -366,8 +359,6 @@ header {
     display: block;
     color: var(--main-light);
     line-height: 1.5;                          /*змінено з 1.71 на 1.5*/
-
-   
 }
 
 .post-address:hover {
@@ -392,11 +383,23 @@ header {
 }
 
 
+                /*Portfolio.html*/
 
+/* оформлення меню кнопок сторінки Portfolio.html*/
+.portfolio {
+    padding-top:94px;
+    padding-bottom: 94px;
+}
 
+.filter-button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;    
+}
 
-
-/* оформлення кнопок сторінки Portfolio.html*/
+.button-list-item + .button-list-item {
+    margin-left: 8px;
+}
 
 .filter-button {
     cursor: pointer;
@@ -437,21 +440,29 @@ header {
 }
 
 
-/*
-.filter-button+.filter-button {
-    margin-left: 8px;
+/*оформлення головної секції сторінки Portfolio*/
+
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 
-/*оформлення головної секції сторінки Portfolio*/
-
+.portfolio-item {
+    border: 1px solid var(--portfolio-item-border-color);
+}
 .portfolio-title {
+    margin-top: 20px;
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
 .portfolio-description {
+    margin: 0;
     color: var(--secondary-font-color);
     font-size: 16px;
     line-height: 1.88;
